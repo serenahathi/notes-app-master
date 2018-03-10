@@ -9,14 +9,14 @@ describe("Converting note text to html");
     var notelist = new noteList();
     notelist.addNote("Hi");
     var notelistview = new noteListView(notelist);
-    expect.toEqual(notelistview.createHtml(), "<li><div>Hi</li></div>");
+    expect.toEqual(notelistview.createHtml(), "<div><li>Hi</li></div>");
 
   it("Handles note lists that contain multiple notes");
     var notelist2 = new noteList();
     notelist2.addNote("Hi");
     notelist2.addNote("Bonjour");
     var notelistview2 = new noteListView(notelist2);
-    expect.toEqual(notelistview2.createHtml(), "<li><div>Hi</li></div><li><div>Bonjour</li></div>");
+    expect.toEqual(notelistview2.createHtml(), "<div><li>Hi</li></div><div><li>Bonjour</li></div>");
 
   console.log("---")
 

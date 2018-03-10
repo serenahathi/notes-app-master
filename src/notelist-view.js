@@ -10,7 +10,7 @@
       var htmlString = ""
       var individualNotes = this.noteList.viewNotes();
       for (var i = 0; i < individualNotes.length; i++) {
-        htmlString += `<li><div>${individualNotes[i].viewText()}</li></div>`;
+        htmlString += `<div><li>${individualNotes[i].viewText()}</li></div>`;
       }
       return htmlString;
     }
