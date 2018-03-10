@@ -1,0 +1,25 @@
+{
+  "name": "notes-app",
+  "version": "1.0.0",
+  "description": "a single page app using pure javascript",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/serenahathi/notes-app-master.git"
+  },
+  "keywords": [
+    "notes"
+  ],
+  "author": "serena hathi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/serenahathi/notes-app-master/issues"
+  },
+  "homepage": "https://github.com/serenahathi/notes-app-master#readme",
+  "dependencies": {
+    "http-server": "^0.11.1"
+  }
+}
