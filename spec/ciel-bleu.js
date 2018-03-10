@@ -1,5 +1,6 @@
-var expect = {
+console.log("%c Test outcome", "font-weight: bold")
 
+var expect = {
   isTrue: function(assertion) {
     if (!assertion) {
       throw new Error("     Assertion failed: " + assertion + " is not truthy");
@@ -10,17 +11,17 @@ var expect = {
 
   toEqual: function(assertion, check) {
     if (assertion !== check) {
-      throw new Error("     Assertion is not equal");
+      throw new Error(`     Assertion is not equal to '${check}'`);
     } else {
-      console.log("     %c Assertion is equal to " + check, "color: green");
+      console.log(`     %c Assertion is equal to '${check}'`, "color: green");
     }
   },
 
   toInclude: function(assertion, check) {
     if (!assertion.includes(check)) {
-      throw new Error(      "Assertion does not include " + check);
+      throw new Error(      `Assertion does not include '${check}'`);
     } else {
-      console.log("      %c Assertion does include " + check, "color: green");
+      console.log(`      %c Assertion includes '${check}'`, "color: green");
     }
   },
 

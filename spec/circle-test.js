@@ -8,11 +8,11 @@ testCircleRadiusDefaultsTo10();
 
 describe("diameter check");
 it("default diameter is 20");
-function testCircleDiameterEqual20() {
+function testCircleDiameterEquals20() {
   var circle = new Circle();
   expect.toEqual(circle.diameter, 20);
 };
-testCircleDiameterEqual20();
+testCircleDiameterEquals20();
 
 describe("quantity check");
 it("quantity includes 50");
